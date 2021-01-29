@@ -1,0 +1,10 @@
+**/.idea/
+/out/production/
+**/*.jpg
+**/*.png
+**/j9ccxzph.Testy
+**/logfile2.log
+**/allure-report
+**/target
+**/raport
+**/venv

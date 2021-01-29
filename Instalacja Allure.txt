@@ -1,0 +1,18 @@
+Odpalamy Powershella (najlepiej jako admin)
+Polecenia do instalacji:
+
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+
+scoop install allure
+
+pip install allure-behave
+
+Następnie przechodzimy w Powershellu do folderu projektu i wpisujemy 
+polecenie aby odpalić testy:
+
+behave -f allure_behave.formatter:AllureFormatter -o raport ./features
+
+Po przejściu testów aby wygenerować raport wpisujemy (wygeneruje nam raport i 
+odpali w przeglądarce):
+
+allure serve raport
